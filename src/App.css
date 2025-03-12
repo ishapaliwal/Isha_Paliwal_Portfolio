@@ -45,3 +45,47 @@
   top: 0;
   left: 0;
 }
+
+.borderAtTop {
+  background: url('../public/assets/BorderAtTop.jpg');
+  width: 100%;
+  height: 64px;
+  background-repeat: repeat-x;
+}
+
+.borderAtBottom {
+  background: url('../public/assets/BorderAtBottom.jpg');
+  bottom: 0px;
+  width: 100%;
+    height: 64px;
+    background-repeat: repeat-x;
+    position: fixed;
+    left: 0px;
+}
+
+.borderAtLeft {
+  background: url('../public/assets/BorderAtLeft.jpg');
+  width: 64px;
+  height: 100%;
+  background-repeat: repeat-y;
+  position: fixed;
+}
+
+.borderAtRight {
+  background: url('../public/assets/BorderAtRight.jpg');
+  width: 64px;
+    height: 100%;
+    background-repeat: repeat-y;
+    position: fixed;
+    right: 0px;
+}
+
+.mainContent {
+  position: fixed;
+  top: 4%;
+  left: 4%;
+  width: 92%;
+  border-radius: 25px;
+  background-color: #faefe6;
+  height: 92%;
+}

@@ -113,11 +113,11 @@ function TwinkleParticles() {
           }
         },
         retina_detect: true,
-        background: {
-          color: {
-            value: "#faefe6"
-          }
-        },
+        // background: {
+        //   color: {
+        //     value: "#faefe6"
+        //   }
+        // },
         fps_limit: 60
       }}
     />
