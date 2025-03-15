@@ -1,8 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import TwinkleParticles from './components/special_components/TwinkleParticles';
-import Navbar from "./components/Navbar";
+import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import LandingPage from "./components/pages/LandingPage";
 import AboutMe from "./components/pages/AboutMe";
@@ -17,7 +18,7 @@ function App() {
   return (
     <Router>
       <TwinkleParticles />
-      <Navbar />
+      <NavBar />
       <Routes>
         <Route path="/" element={<LandingPage />}></Route>
         <Route path="/about" element={<AboutMe />}></Route>
