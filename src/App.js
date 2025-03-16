@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import TwinkleParticles from './components/special_components/TwinkleParticles';
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";

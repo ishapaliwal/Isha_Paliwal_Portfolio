@@ -45,3 +45,40 @@
   left: 0;
   z-index: -1;
 }
+
+.navbar-effects {
+  width: 100%;
+  transition: background 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+  background: inherit;
+  font-weight: 700;
+}
+
+.navbar-effects.scrolled {
+  background: inherit;
+  backdrop-filter: blur(10px);
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+      width: 100%;
+      justify-content: flex-end;
+      gap: 10px;
+  }
+}
+
+.iconMiddle {
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+.me-auto.navbar-nav {
+  text-align: right;
+}
+
+.navbar-collapse {
+  text-align: right;
+}
+
+.nav-link:focus, .nav-link:hover, .nav-link:active {
+  text-decoration: underline;
+}
