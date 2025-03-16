@@ -12,10 +12,12 @@ import FeedbackIcon from '@mui/icons-material/Feedback';
 import ContactEmergencyIcon from '@mui/icons-material/ContactEmergency';
 import { Tooltip } from '@mui/material';
 import ThemeToggle from './special_components/ThemeToggle';
+import { useTheme } from './special_components/ApplyTheme';
 
 
 function NavBar() {
   const [scrolling, setScrolling] = useState(false);
+  const { darkMode } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,7 +33,7 @@ function NavBar() {
   }, []);
 
   return (
-    <Navbar expand="lg" className={`navbar-effects ${scrolling ? "scrolled" : ""}`} fixed="top">
+    <Navbar expand="lg" className={`navbar-effects ${scrolling ? "scrolled" : ""}${darkMode ? "dark" : "light"}`} fixed="top">
       <Container>
         <Navbar.Brand href="/">Isha Paliwal</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

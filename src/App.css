@@ -82,3 +82,7 @@
 .nav-link:focus, .nav-link:hover, .nav-link:active {
   text-decoration: underline;
 }
+
+.nav-link {
+  color: var(--bs-nav-link-color);
+}
