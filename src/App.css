@@ -83,6 +83,10 @@
   text-decoration: underline;
 }
 
-.nav-link {
-  color: var(--bs-nav-link-color);
+.navbar {
+  padding: 0px !important;
+}
+.navbar-brand {
+  padding: 0px !important;
+  margin: 0px !important;
 }

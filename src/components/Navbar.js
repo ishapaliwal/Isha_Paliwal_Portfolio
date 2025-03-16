@@ -33,9 +33,9 @@ function NavBar() {
   }, []);
 
   return (
-    <Navbar expand="lg" className={`navbar-effects ${scrolling ? "scrolled" : ""}${darkMode ? "dark" : "light"}`} fixed="top">
+    <Navbar expand="lg" className={`navbar-effects ${scrolling ? "scrolled" : ""}${darkMode ? "dark-theme" : "light-theme"}`} fixed="top">
       <Container>
-        <Navbar.Brand href="/">Isha Paliwal</Navbar.Brand>
+        <Navbar.Brand href="/"><img src={`${process.env.PUBLIC_URL}/isha_paliwal_logo.png`} alt="Logo" width="80px" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

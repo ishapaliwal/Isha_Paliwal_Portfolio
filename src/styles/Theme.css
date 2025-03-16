@@ -4,8 +4,13 @@
     --bs-heading-color: #333;
     --bs-navbar-color: #333 !important;
     --bs-nav-link-color: #333 !important;
-    --primary-color: #ff8c00;
-    --secondary-color: #ffb84d;
+    --bs-emphasis-color-rgb: #333 !important;
+    --bs-navbar-brand-color: #333 !important;
+    --bs-navbar-brand-hover-color: #333 !important;
+    --bs-nav-link-hover-color: #333 !important;
+    --bs-navbar-hover-color: #333 !important;
+    --primary-color: #489AA8;
+    --secondary-color: #936C4B;
     --nav-bg: rgba(255, 255, 255, 0.8);
   }
   
@@ -15,8 +20,14 @@
     --bs-heading-color: #f1f1f1;
     --bs-navbar-color: #f1f1f1 !important;
     --bs-nav-link-color: #f1f1f1 !important;
-    --primary-color: #ff5733;
-    --secondary-color: #ff8c66;
+    --bs-emphasis-color-rgb: #f1f1f1 !important;
+    --bs-navbar-brand-color: #f1f1f1 !important;
+    --bs-navbar-brand-hover-color: #f1f1f1 !important;
+    --bs-nav-link-hover-color: #f1f1f1 !important;
+    --bs-navbar-hover-color: #f1f1f1 !important;
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath stroke='rgba(241, 241, 241, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24' /%3E%3C/svg%3E");
+    --primary-color: #c38fff;
+    --secondary-color: #03dac6;
     --nav-bg: rgba(20, 20, 20, 0.8);
   }
   
@@ -24,8 +35,5 @@
     background: var(--bg-image);
     color: var(--text-color);
     transition: background 0.3s ease, color 0.3s ease;
-  }  
-
-  .nav-link {
-    color: var(--bs-nav-link-color);
+    padding: 10%;
   }

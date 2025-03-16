@@ -15,11 +15,13 @@ import Resume from "./components/pages/Resume";
 import ClientFeedback from "./components/pages/ClientFeedback";
 import Contact from "./components/pages/Contact";
 import { ThemeProvider } from "./components/special_components/ApplyTheme";
+// import FluidEffect from './components/special_components/FluidEffect';
 
 function App() {
   return (
     <ThemeProvider>
       <Router>
+        {/* <FluidEffect /> */}
         <TwinkleParticles />
         <NavBar />
         <Routes>

@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/ThemeToggle.css";
-import { useTheme } from "../special_components/ApplyTheme"
+import { useTheme } from "../special_components/ApplyTheme";
 
 const ThemeToggle = () => {
   const { darkMode, setDarkMode } = useTheme();
@@ -23,7 +23,7 @@ const ThemeToggle = () => {
           </linearGradient>
 
           <filter id="blur-light">
-            <feGaussianBlur stdDeviation="1"></feGaussianBlur>
+            <feGaussianBlur stdDeviation="2"></feGaussianBlur>
           </filter>
 
           <pattern id="pattern-light" width="0.1" height="1" viewBox="0 0 10 45">
@@ -49,9 +49,16 @@ const ThemeToggle = () => {
             <stop stopColor="#e2e2e2" offset="1"></stop>
           </radialGradient>
 
+          <radialGradient id="gradient-crater">
+            <stop stopColor="#e0e0e0" offset="0"></stop>
+            <stop stopColor="#d9d9d9" offset="1"></stop>
+          </radialGradient>
+
           <pattern id="pattern-dark" width="0.2" height="1" viewBox="0 0 20 45">
             <path fill="#fff" d="M 2 5 l 1 1 l -1 1 l -1 -1 l 1 -1"></path>
             <path fill="#fff" d="M 10 16 l 1 1 l -1 1 l -1 -1 l 1 -1"></path>
+            <path fill="#fff" d="M 16 27 l 1 1 l -1 1 l -1 -1 l 1 -1"></path>
+            <path fill="#fff" d="M 10 38 l 1 1 l -1 1 l -1 -1 l 1 -1"></path>
           </pattern>
         </defs>
 
@@ -80,6 +87,15 @@ const ThemeToggle = () => {
             <g className="rotate" transform="rotate(-100)">
               <g className="dark">
                 <circle fill="url(#gradient-moon)" cx="0" cy="0" r="20.5"></circle>
+                <g transform="translate(-8 -7.5)">
+                    <ellipse transform="rotate(-30)" fill="url(#gradient-crater)" stroke="#d5d5d5" strokeWidth="0.2" cx="0" cy="0" rx="4" ry="3"></ellipse>
+                </g>
+                <g transform="translate(11 5)">
+                    <ellipse fill="url(#gradient-crater)" stroke="#d5d5d5" strokeWidth="0.2" cx="0" cy="0" rx="3.85" ry="4"></ellipse>
+                </g>
+                <g transform="translate(-6 12)">
+                    <ellipse transform="rotate(-10)" fill="url(#gradient-crater)" stroke="#d5d5d5" strokeWidth="0.2" cx="0" cy="0" rx="2" ry="1.75"></ellipse>
+                </g>
               </g>
             </g>
             <g className="light">
