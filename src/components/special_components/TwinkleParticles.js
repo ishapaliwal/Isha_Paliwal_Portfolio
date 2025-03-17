@@ -9,21 +9,15 @@ function TwinkleParticles() {
   useEffect(() => {
     const fetchColors = () => {
       const rootStyles = getComputedStyle(document.body);
-      console.log(rootStyles);
       setPrimaryColor(
-        rootStyles
-          .getPropertyValue("--primary-color")
-          .trim() || "#d46bca"
+        rootStyles.getPropertyValue("--primary-color").trim() || "#d46bca"
       );
       setSecondaryColor(
-        rootStyles
-          .getPropertyValue("--secondary-color")
-          .trim() || "#fd883d"
+        rootStyles.getPropertyValue("--secondary-color").trim() || "#fd883d"
       );
       setAnimationMainColor(
-        rootStyles
-          .getPropertyValue("--animation-main-color")
-          .trim() || "#f1f1f1"
+        rootStyles.getPropertyValue("--animation-main-color").trim() ||
+          "#f1f1f1"
       );
     };
 

@@ -1,0 +1,77 @@
+.slider-container {
+    width: 100%;
+    height: 100vh;
+    max-height: 250px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-color: #000;
+    transition: background-image 1s ease-in-out;
+}
+
+/* Progress Bar */
+.progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background-color: #f0ad30;
+    width: 0;
+    animation: progressAnim 3s linear forwards;
+}
+
+@keyframes progressAnim {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Card Styles */
+.cards {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.card {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 10px 20px 0px rgba(0, 0, 0, 0.8);
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    position: absolute;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.card.active {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 0;
+    box-shadow: none;
+    opacity: 1;
+    z-index: 5;
+}
+
+/* Fix Text Visibility */
+.card h3 {
+    position: absolute;
+    bottom: 8%;
+    left: 8%;
+    color: #fff;
+    font-size: 2rem;
+    text-shadow: black 5px 5px 2px;
+}

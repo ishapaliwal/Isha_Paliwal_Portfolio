@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -51,20 +52,20 @@
   transition: background 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
   background: inherit;
   font-weight: 700;
-  color: var(--text-color);
+  color: var(--primary-color);
 }
 
 .navbar-effects.scrolled {
   background: inherit;
-  color: var(--text-color);
+  color: var(--primary-color);
   backdrop-filter: blur(10px);
 }
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
-      width: 100%;
-      justify-content: flex-end;
-      gap: 10px;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 10px;
   }
 }
 
@@ -81,14 +82,63 @@
   text-align: right;
 }
 
-.nav-link:focus, .nav-link:hover, .nav-link:active {
+.nav-link:focus,
+.nav-link:hover,
+.nav-link:active {
   text-decoration: underline;
 }
 
 .navbar {
   padding: 0px !important;
 }
+
 .navbar-brand {
   padding: 0px !important;
   margin: 0px !important;
+}
+
+.footer-effects {
+  width: 100%;
+  transition: background 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+  background: inherit;
+  font-weight: 700;
+  color: var(--primary-color);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10%;
+}
+
+.footer-effects.scrolled {
+  background: inherit;
+  color: var(--primary-color);
+  backdrop-filter: blur(10px);
+}
+
+.footer-links {
+  display: flex;
+  color: inherit;
+  gap: 10px;
+}
+
+.progressBar {
+  display: flex;
+  justify-content: center;
+  margin-top: -50px !important;
+}
+
+.progressBar div {
+  width: 400px !important;
+}
+
+.progressBarTagline {
+  margin-top: -54px;
+  display: flex;
+  justify-content: center;
+}
+
+.normalText {
+  color: var(--primary-color);
 }

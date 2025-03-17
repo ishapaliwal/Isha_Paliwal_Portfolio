@@ -8,7 +8,8 @@ import WorkIcon from '@mui/icons-material/Work';
 import Face2Icon from '@mui/icons-material/Face2';
 import TerminalIcon from '@mui/icons-material/Terminal';
 import FeedIcon from '@mui/icons-material/Feed';
-import FeedbackIcon from '@mui/icons-material/Feedback';
+// import FeedbackIcon from '@mui/icons-material/Feedback';
+import SpeakerNotesIcon from '@mui/icons-material/SpeakerNotes';
 import ContactEmergencyIcon from '@mui/icons-material/ContactEmergency';
 import { Tooltip } from '@mui/material';
 import ThemeToggle from './special_components/ThemeToggle';
@@ -44,7 +45,8 @@ function NavBar() {
             <Nav.Link href="/education"><SchoolIcon className="iconMiddle"></SchoolIcon>Education</Nav.Link>
             <Nav.Link href="/projects"><TerminalIcon className="iconMiddle"></TerminalIcon>Projects</Nav.Link>
             <Nav.Link href="/resume"><FeedIcon className="iconMiddle"></FeedIcon>Resume</Nav.Link>
-            <Nav.Link href="/feedback"><FeedbackIcon className="iconMiddle"></FeedbackIcon>Client Feedback</Nav.Link>
+            {/* <Nav.Link href="/feedback"><FeedbackIcon className="iconMiddle"></FeedbackIcon>Client Feedback</Nav.Link> */}
+            <Nav.Link href="/blogs"><SpeakerNotesIcon className="iconMiddle"></SpeakerNotesIcon>Blogs</Nav.Link>
             <Nav.Link href="/contact"><ContactEmergencyIcon className="iconMiddle"></ContactEmergencyIcon>Contact</Nav.Link>
             <Nav.Link as="a" href="https://github.com/ishapaliwal/Isha_Paliwal_Portfolio" target="_blank" ><Tooltip title="Portfolio Github Link"><LinkIcon></LinkIcon></Tooltip></Nav.Link>
           </Nav>
