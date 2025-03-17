@@ -15,20 +15,20 @@ import Resume from "./components/pages/Resume";
 import ClientFeedback from "./components/pages/ClientFeedback";
 import Contact from "./components/pages/Contact";
 import { ThemeProvider } from "./components/special_components/ApplyTheme";
-// import FluidEffect from './components/special_components/FluidEffect';
+// import FluidEffect from "./components/special_components/FluidEffect";
 
 function App() {
   return (
     <ThemeProvider>
+      {/* <FluidEffect /> */}
       <Router>
-        {/* <FluidEffect /> */}
         <TwinkleParticles />
         <NavBar />
         <Routes>
           <Route path="/" element={<LandingPage />}></Route>
           <Route path="/about" element={<AboutMe />}></Route>
-          <Route path="/education" element={<Education />}></Route>
           <Route path="/experience" element={<Experience />}></Route>
+          <Route path="/education" element={<Education />}></Route>
           <Route path="/projects" element={<Projects />}></Route>
           <Route path="/resume" element={<Resume />}></Route>
           <Route path="/feedback" element={<ClientFeedback />}></Route>

@@ -1,69 +1,45 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from 'react';
+import webglFluid from 'webgl-fluid';
+import "../../styles/FluidEffect.css";
 
 const FluidEffect = () => {
-  const canvasRef = useRef(null);
-
   useEffect(() => {
-    const canvas = canvasRef.current;
-    const ctx = canvas.getContext("2d");
-
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-
-    let particles = [];
-    let hue = 0;
-
-    class Particle {
-      constructor(x, y) {
-        this.x = x;
-        this.y = y;
-        this.size = Math.random() * 10 + 5;
-        this.speedX = Math.random() * 3 - 1.5;
-        this.speedY = Math.random() * 3 - 1.5;
-        this.color = `hsl(${hue}, 100%, 50%)`;
-      }
-
-      update() {
-        this.x += this.speedX;
-        this.y += this.speedY;
-        this.size *= 0.98;
-      }
-
-      draw() {
-        ctx.fillStyle = this.color;
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fill();
-      }
-    }
-
-    function handleMouseMove(event) {
-      hue += 2;
-      particles.push(new Particle(event.clientX, event.clientY));
-    }
-
-    function animate() {
-
-      particles.forEach((particle, index) => {
-        particle.update();
-        particle.draw();
-        if (particle.size < 1) {
-          particles.splice(index, 1);
-        }
+    if (typeof webglFluid === 'function') {
+      webglFluid(document.querySelector('canvas'), {
+        TRANSPARENT: true,
+        IMMEDIATE: false,
+        TRIGGER: 'hover',
+        SIM_RESOLUTION: 128,
+        DYE_RESOLUTION: 512,
+        CAPTURE_RESOLUTION: 512,
+        DENSITY_DISSIPATION: 2,
+        VELOCITY_DISSIPATION: 1,
+        PRESSURE: 0.8,
+        PRESSURE_ITERATIONS: 4,
+        CURL: 4,
+        SPLAT_RADIUS: 0.9,
+        SPLAT_FORCE: 5500,
+        SHADING: true,
+        COLORFUL: true,
+        COLOR_UPDATE_SPEED: 3,
+        PAUSED: false,
+        BACK_COLOR: { r: 10, g: 10, b: 10 },
+        BLOOM: false,
+        BLOOM_ITERATIONS: 8,
+        BLOOM_RESOLUTION: 256,
+        BLOOM_INTENSITY: 0.8,
+        BLOOM_THRESHOLD: 0.6,
+        BLOOM_SOFT_KNEE: 0.7,
+        SUNRAYS: false,
+        SUNRAYS_RESOLUTION: 64,
+        SUNRAYS_WEIGHT: 0.5
       });
-
-      requestAnimationFrame(animate);
+    } else {
+      console.error("webglFluid is not a function. Check the import.");
     }
-
-    canvas.addEventListener("mousemove", handleMouseMove);
-    animate();
-
-    return () => {
-      canvas.removeEventListener("mousemove", handleMouseMove);
-    };
   }, []);
 
-  return <canvas ref={canvasRef} style={{ position: "absolute", top: 0, left: 0, width: "100vw", height: "100vh" }} />;
+  return <canvas className="fluid-effect-canvas" />;
 };
 
 export default FluidEffect;

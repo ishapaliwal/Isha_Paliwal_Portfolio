@@ -2,7 +2,14 @@
 
 .game {
   position: relative;
-  width: 100%;
+  width: 50%;
   height: 100%;
+  /* min-height: 300px; */
   font-family: "Press Start 2P", cursive;
+  float: right;
+  border: var(--game-border) 4px dashed;
 }
+
+/* canvas {
+  min-height: 300px;
+} */

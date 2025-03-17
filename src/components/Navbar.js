@@ -33,15 +33,15 @@ function NavBar() {
   }, []);
 
   return (
-    <Navbar expand="lg" className={`navbar-effects ${scrolling ? "scrolled" : ""}${darkMode ? "dark-theme" : "light-theme"}`} fixed="top">
+    <Navbar expand="lg" className={`navbar-effects ${scrolling ? "scrolled" : ""} ${darkMode ? "dark-theme" : "light-theme"}`} fixed="top">
       <Container>
         <Navbar.Brand href="/"><img src={`${process.env.PUBLIC_URL}/isha_paliwal_logo.png`} alt="Logo" width="80px" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/about"><Face2Icon className="iconMiddle"></Face2Icon>About Me</Nav.Link>
-            <Nav.Link href="/education"><SchoolIcon className="iconMiddle"></SchoolIcon>Education</Nav.Link>
             <Nav.Link href="/experience"><WorkIcon className="iconMiddle"></WorkIcon>Experience</Nav.Link>
+            <Nav.Link href="/education"><SchoolIcon className="iconMiddle"></SchoolIcon>Education</Nav.Link>
             <Nav.Link href="/projects"><TerminalIcon className="iconMiddle"></TerminalIcon>Projects</Nav.Link>
             <Nav.Link href="/resume"><FeedIcon className="iconMiddle"></FeedIcon>Resume</Nav.Link>
             <Nav.Link href="/feedback"><FeedbackIcon className="iconMiddle"></FeedbackIcon>Client Feedback</Nav.Link>

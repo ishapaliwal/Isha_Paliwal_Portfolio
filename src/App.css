@@ -51,10 +51,12 @@
   transition: background 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
   background: inherit;
   font-weight: 700;
+  color: var(--text-color);
 }
 
 .navbar-effects.scrolled {
   background: inherit;
+  color: var(--text-color);
   backdrop-filter: blur(10px);
 }
 
