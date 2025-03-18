@@ -99,22 +99,18 @@
 
 .footer-effects {
   width: 100%;
-  transition: background 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
   background: inherit;
   font-weight: 700;
+  background: inherit;
   color: var(--primary-color);
+  backdrop-filter: blur(10px);
   position: fixed;
   bottom: 0;
   left: 0;
   display: flex;
   justify-content: space-between;
   padding: 10px 10%;
-}
-
-.footer-effects.scrolled {
-  background: inherit;
-  color: var(--primary-color);
-  backdrop-filter: blur(10px);
+  z-index: 4;
 }
 
 .footer-links {
@@ -131,6 +127,7 @@
 
 .progressBar div {
   width: 400px !important;
+  height: 200px !important;
 }
 
 .progressBarTagline {
