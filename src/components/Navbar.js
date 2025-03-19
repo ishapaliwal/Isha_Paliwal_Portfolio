@@ -46,8 +46,8 @@ function NavBar() {
             <Nav.Link href="/projects"><TerminalIcon className="iconMiddle"></TerminalIcon>Projects</Nav.Link>
             <Nav.Link href="/resume"><FeedIcon className="iconMiddle"></FeedIcon>Resume</Nav.Link>
             {/* <Nav.Link href="/feedback"><FeedbackIcon className="iconMiddle"></FeedbackIcon>Client Feedback</Nav.Link> */}
-            <Nav.Link href="/blogs"><SpeakerNotesIcon className="iconMiddle"></SpeakerNotesIcon>Blogs</Nav.Link>
             <Nav.Link href="/contact"><ContactEmergencyIcon className="iconMiddle"></ContactEmergencyIcon>Contact</Nav.Link>
+            <Nav.Link href="https://blogs.gwu.edu/isha-paliwal/" target="_blank" rel="noopener noreferrer"><SpeakerNotesIcon className="iconMiddle"></SpeakerNotesIcon>Blogs</Nav.Link>
             <Nav.Link as="a" href="https://github.com/ishapaliwal/Isha_Paliwal_Portfolio" target="_blank" ><Tooltip title="Portfolio Github Link"><LinkIcon></LinkIcon></Tooltip></Nav.Link>
           </Nav>
           <ThemeToggle />

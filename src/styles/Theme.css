@@ -16,7 +16,7 @@
   /* --primary-color: #489AA8; */
   --secondary-color: #fd883d;
   /* --secondary-color: #936C4B; */
-  --tertiary-color: #2B3A67;
+  --tertiary-color: #553566;
   --nav-bg: rgba(255, 255, 255, 0.8);
   --game-border: #333;
   --skill-bar-bg: #e1d9d2;
@@ -40,7 +40,7 @@
   --primary-color: #c38fff;
   --secondary-color: #03dac6;
   --tertiary-color: #DBA55A;
-  --nav-bg: rgba(20, 20, 20, 0.8);
+  --nav-bg: #141414cc;
   --game-border: #f1f1f1;
   --skill-bar-bg: #534e4e;
   --skills-box-shadow: rgba(255, 255, 255, 0.7);
@@ -51,17 +51,17 @@ body {
   background: var(--bg-image);
   color: var(--text-color);
   transition: background 0.3s ease, color 0.3s ease;
-  padding: 8% 10% 4%;
+  padding: 8% 10% 10%;
 }
 
 @media (max-width: 900px) {
   body {
-    padding: 13% 10% 4%;
+    padding: 13% 10% 20%;
   }
 }
 
 @media (max-width: 500px) {
   body {
-      padding: 21% 10% 4%;
+      padding: 21% 10% 30%;
   }
 }

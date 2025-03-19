@@ -53,6 +53,7 @@ const Experience = () => {
 
   return (
     <div>
+      <h2>Experience</h2>
       <div className="slider normalText">
         <button className="slider--btn slider--btn__prev" onClick={handlePrev}>
           ❮

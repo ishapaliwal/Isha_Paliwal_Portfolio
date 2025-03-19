@@ -4,7 +4,7 @@
     justify-content: center;
     width: 100%;
     position: relative;
-    height: 780px;
+    height: 620px;
 }
 
 .slider--btn {
@@ -47,39 +47,39 @@
 }
 
 .slide-title {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     font-weight: bold;
     color: var(--secondary-color);
 }
 
 .slide-company {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--tertiary-color);
     margin-bottom: 5px;
 }
 
 .slide-location {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
 .slide-duration {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: 400;
     margin-bottom: 10px;
     font-style: italic;
 }
 
 .slide-clients {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: 500;
     color: var(--tertiary-color);
     margin-bottom: 12px;
 }
 
 .slide-description {
-    font-size: 1.05rem;
+    font-size: 0.9rem;
     line-height: 1.4;
     text-align: justify;
 }

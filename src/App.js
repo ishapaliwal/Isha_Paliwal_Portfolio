@@ -12,7 +12,6 @@ import Education from "./components/pages/Education";
 import Experience from "./components/pages/Experience";
 import Projects from "./components/pages/Projects";
 import Resume from "./components/pages/Resume";
-import Blogs from "./components/pages/Blogs";
 import Contact from "./components/pages/Contact";
 import { ThemeProvider } from "./components/special_components/ApplyTheme";
 // import FluidEffect from "./components/special_components/FluidEffect";
@@ -32,7 +31,6 @@ function App() {
           <Route path="/projects" element={<Projects />}></Route>
           <Route path="/resume" element={<Resume />}></Route>
           {/* <Route path="/feedback" element={<ClientFeedback />}></Route> */}
-          <Route path="/blogs" element={<Blogs />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
         <Footer />

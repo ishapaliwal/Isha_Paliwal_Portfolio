@@ -59,7 +59,7 @@ function Footer() {
           </Tooltip>
         </span>
         <span>
-          <Tooltip title="Blog" placement="top">
+          <Tooltip title="Blogs" placement="top">
             <Link
               href="https://blogs.gwu.edu/isha-paliwal/"
               target="_blank"
