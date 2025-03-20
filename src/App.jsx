@@ -14,12 +14,10 @@ import Projects from "./components/pages/Projects";
 import Resume from "./components/pages/Resume";
 import Contact from "./components/pages/Contact";
 import { ThemeProvider } from "./components/special_components/ApplyTheme";
-// import FluidEffect from "./components/special_components/FluidEffect";
 
 function App() {
   return (
     <ThemeProvider>
-      {/* <FluidEffect /> */}
       <Router>
         <TwinkleParticles />
         <NavBar />

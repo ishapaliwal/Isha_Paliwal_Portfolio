@@ -21,7 +21,6 @@ export default function useEventListeners() {
 
     window.addEventListener("keydown", handleKeyDown);
 
-    // Cleanup function to remove the event listener
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };

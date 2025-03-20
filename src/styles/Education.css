@@ -1,0 +1,45 @@
+.education-container {
+    min-height: 30vh;
+    background-color: inherit;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-content {
+    max-width: 800px;
+    width: 100%;
+}
+
+.education-title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.education-card {
+    background-color: var(--skill-bar-bg);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px var(--skills-box-shadow);
+    padding: 20px;
+    border: 1px solid var(--game-border);
+}
+
+.education-degree {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.education-duration {
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+}
