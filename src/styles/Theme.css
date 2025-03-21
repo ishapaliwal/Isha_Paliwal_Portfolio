@@ -22,6 +22,9 @@
   --skill-bar-bg: #e1d9d2;
   --skills-box-shadow: rgba(0, 0, 0, 0.1);
   --slides-background: rgba(0, 0, 0, 0.15);
+  --contact-input-background: #ffffff;
+  --contact-input-placeholder: #636668;
+  --contact-input-color: #000;
 }
 
 .dark-theme {
@@ -45,6 +48,9 @@
   --skill-bar-bg: #534e4e;
   --skills-box-shadow: rgba(255, 255, 255, 0.7);
   --slides-background: rgba(255, 255, 255, 0.15);
+  --contact-input-background: #6d6666;
+  --contact-input-placeholder: #ece4e4;
+  --contact-input-color: #fff;
 }
 
 body {

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { motion } from "framer-motion";
 import "../../styles/Education.css";
 
@@ -18,10 +19,28 @@ function Education() {
   ];
 
   const [animationLoaded, setAnimationLoaded] = useState(false);
+  const [showScrollArrow, setShowScrollArrow] = useState(true);
 
   useEffect(() => {
     setTimeout(() => setAnimationLoaded(true), 1000);
   }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {
+        setShowScrollArrow(false);
+      } else {
+        setShowScrollArrow(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollByView = () => {
+    window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
+  };
 
   return (
     <div>
@@ -49,7 +68,6 @@ function Education() {
         {animationLoaded ? (
           <DotLottieReact
             src="https://lottie.host/faff2bcc-70dc-4859-b626-b7efd698fd1c/1prYo0yYe2.lottie"
-            loop
             autoplay
           />
         ) : (
@@ -59,6 +77,12 @@ function Education() {
       <div className="progressBarTagline normalText">
         Every step forward is a step toward greatness! 🚀
       </div>
+
+      {showScrollArrow && (
+        <div className="scroll-down" onClick={scrollByView}>
+          <KeyboardArrowDownIcon></KeyboardArrowDownIcon>
+        </div>
+      )}
     </div>
   );
 }

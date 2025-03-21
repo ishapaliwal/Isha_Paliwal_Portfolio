@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import "../../styles/AboutMe.css";
 
 function AboutMe() {
@@ -46,10 +47,28 @@ function AboutMe() {
   ];
 
   const [animationLoaded, setAnimationLoaded] = useState(false);
+  const [showScrollArrow, setShowScrollArrow] = useState(true);
 
   useEffect(() => {
     setTimeout(() => setAnimationLoaded(true), 1000);
   }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {
+        setShowScrollArrow(false);
+      } else {
+        setShowScrollArrow(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollByView = () => {
+    window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
+  };
 
   return (
     <div>
@@ -99,7 +118,8 @@ function AboutMe() {
               cultures.
             </p>
             <p>
-              📚 <b>Avid Reader</b> - Fiction, tech, philosophy - I devour it all.
+              📚 <b>Avid Reader</b> - Fiction, tech, philosophy - I devour it
+              all.
             </p>
             <p>
               🎢 <b>Adventure Junkie</b> - Skydiving, rafting, and more.
@@ -125,7 +145,6 @@ function AboutMe() {
         {animationLoaded ? (
           <DotLottieReact
             src="https://lottie.host/fcf095d3-2790-4d03-9f31-7aa227ed4498/ZiCvCrHk9p.lottie"
-            loop
             autoplay
           />
         ) : (
@@ -164,6 +183,12 @@ function AboutMe() {
           ))}
         </div>
       </div>
+
+      {showScrollArrow && (
+        <div className="scroll-down" onClick={scrollByView}>
+          <KeyboardArrowDownIcon></KeyboardArrowDownIcon>
+        </div>
+      )}
     </div>
   );
 }

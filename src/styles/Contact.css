@@ -1,0 +1,48 @@
+.form-control {
+    background-color: var(--contact-input-background);
+    color: var(--contact-input-color) !important;
+}
+
+.form-control:focus {
+    background-color: var(--contact-input-background);
+    color: var(--contact-input-color) !important;
+}
+
+::placeholder {
+    color: var(--contact-input-placeholder) !important;
+    opacity: 1 !important;
+}  
+
+.btn {
+    width: 100%;
+    background-color: #b8c7b0;
+    font-weight: 500;
+    border-radius: 16px 1px 16px 1px;
+    border: none;
+    box-shadow: 2px 2px 4px 4px #768a6b;
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    width: 100%;
+    background-color: #b8c7b0 !important;
+    font-weight: 500;
+    border-radius: 16px 1px 16px 1px;
+    border: none;
+    box-shadow: none;
+    color: #333;
+}
+
+.btn:hover {
+    width: 100%;
+    background-color: #b8c7b0 !important;
+    font-weight: 500;
+    border-radius: 16px 1px 16px 1px;
+    border: none;
+    box-shadow: none;
+    color: #333;
+}
+
+.css-1orsvah-MuiTypography-root-MuiLink-root {
+    color: var(--secondary-color) !important;
+    text-decoration-color: var(--secondary-color) !important;
+}

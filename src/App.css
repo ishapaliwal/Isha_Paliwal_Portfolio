@@ -121,7 +121,7 @@
 .progressBar {
   display: flex;
   justify-content: center;
-  margin-top: -50px !important;
+  margin-top: -110px !important;
 }
 
 .progressBar div {
@@ -130,7 +130,7 @@
 }
 
 .progressBarTagline {
-  margin-top: -54px;
+  /* margin-top: -54px; */
   display: flex;
   justify-content: center;
 }

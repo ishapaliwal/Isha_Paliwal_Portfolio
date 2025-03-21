@@ -12,7 +12,7 @@ export function Result() {
   return (
     <div id="result-container">
       <div id="result">
-        <h1>Game Over</h1>
+        <h2>Game Over</h2>
         <p>Your score: {score}</p>
         <button onClick={reset}>Retry</button>
       </div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import "../../styles/Experience.css";
 
 const experiences = [
@@ -36,10 +37,28 @@ const experiences = [
 const Experience = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animationLoaded, setAnimationLoaded] = useState(false);
+  const [showScrollArrow, setShowScrollArrow] = useState(true);
 
   useEffect(() => {
     setTimeout(() => setAnimationLoaded(true), 1000);
   }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {
+        setShowScrollArrow(false);
+      } else {
+        setShowScrollArrow(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollByView = () => {
+    window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
+  };
 
   const handleNext = () => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % experiences.length);
@@ -105,7 +124,6 @@ const Experience = () => {
         {animationLoaded ? (
           <DotLottieReact
             src="https://lottie.host/ebcba549-fe9a-45a2-b0ed-1965eff09cc2/mmdcMNM5XJ.lottie"
-            loop
             autoplay
           />
         ) : (
@@ -115,6 +133,12 @@ const Experience = () => {
       <div className="progressBarTagline normalText">
         You are doing great! Keep going, your current score is 40/100!
       </div>
+
+      {showScrollArrow && (
+        <div className="scroll-down" onClick={scrollByView}>
+          <KeyboardArrowDownIcon></KeyboardArrowDownIcon>
+        </div>
+      )}
     </div>
   );
 };

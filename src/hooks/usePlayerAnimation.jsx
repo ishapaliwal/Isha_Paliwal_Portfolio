@@ -48,10 +48,10 @@ export default function usePlayerAnimation(ref) {
   
   function setRotation(player, progress) {
     let endRotation = 0;
-    if (state.movesQueue[0] == "forward") endRotation = 0;
-    if (state.movesQueue[0] == "left") endRotation = Math.PI / 2;
-    if (state.movesQueue[0] == "right") endRotation = -Math.PI / 2;
-    if (state.movesQueue[0] == "backward") endRotation = Math.PI;
+    if (state.movesQueue[0] === "forward") endRotation = 0;
+    if (state.movesQueue[0] === "left") endRotation = Math.PI / 2;
+    if (state.movesQueue[0] === "right") endRotation = -Math.PI / 2;
+    if (state.movesQueue[0] === "backward") endRotation = Math.PI;
   
     player.children[0].rotation.z = THREE.MathUtils.lerp(
       player.children[0].rotation.z,
