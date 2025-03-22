@@ -27,7 +27,7 @@ function Education() {
     <div className="education-container normalText">
       <div className="container">
         <h2 className="text-center fw-bold mb-4">Education</h2>
-        <div className="row">
+        <div className="row mx-4">
           {educationData.map((edu, index) => (
             <div key={index} className="col-12 col-md-6 mb-4">
               <div className="p-3 border rounded h-100">
