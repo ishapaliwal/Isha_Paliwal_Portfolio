@@ -32,7 +32,7 @@ function Education() {
             <div key={index} className="col-12 col-md-6 mb-4">
               <div className="p-3 border rounded h-100">
                 <h5 className="mb-2">{edu.degree}</h5>
-                <p className="mb-1">{edu.institution}</p>
+                <p className="mb-1"><strong>{edu.institution}</strong></p>
                 <small>{edu.duration}</small>
               </div>
             </div>
