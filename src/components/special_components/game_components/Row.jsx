@@ -13,5 +13,8 @@ export function Row({ rowIndex, rowData }) {
     case "truck": {
       return <TruckLane rowIndex={rowIndex} rowData={rowData} />;
     }
+    default: {
+      return;
+    }
   }
 }
