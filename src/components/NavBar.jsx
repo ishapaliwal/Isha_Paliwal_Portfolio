@@ -7,8 +7,6 @@ import SchoolIcon from '@mui/icons-material/School';
 import WorkIcon from '@mui/icons-material/Work';
 import Face2Icon from '@mui/icons-material/Face2';
 import TerminalIcon from '@mui/icons-material/Terminal';
-import FeedIcon from '@mui/icons-material/Feed';
-// import FeedbackIcon from '@mui/icons-material/Feedback';
 import SpeakerNotesIcon from '@mui/icons-material/SpeakerNotes';
 import ContactEmergencyIcon from '@mui/icons-material/ContactEmergency';
 import { Tooltip } from '@mui/material';

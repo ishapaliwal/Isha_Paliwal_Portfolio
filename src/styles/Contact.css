@@ -1,4 +1,5 @@
-.form-control {
+.contact-form .form-control {
+    width: 100%;
     background-color: var(--contact-input-background);
     color: var(--contact-input-color) !important;
 }
@@ -11,35 +12,6 @@
 ::placeholder {
     color: var(--contact-input-placeholder) !important;
     opacity: 1 !important;
-}  
-
-.btn {
-    width: 100%;
-    background-color: #b8c7b0;
-    font-weight: 500;
-    border-radius: 16px 1px 16px 1px;
-    border: none;
-    box-shadow: 2px 2px 4px 4px #768a6b;
-}
-
-.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
-    width: 100%;
-    background-color: #b8c7b0 !important;
-    font-weight: 500;
-    border-radius: 16px 1px 16px 1px;
-    border: none;
-    box-shadow: none;
-    color: #333;
-}
-
-.btn:hover {
-    width: 100%;
-    background-color: #b8c7b0 !important;
-    font-weight: 500;
-    border-radius: 16px 1px 16px 1px;
-    border: none;
-    box-shadow: none;
-    color: #333;
 }
 
 .css-1orsvah-MuiTypography-root-MuiLink-root {
@@ -48,6 +20,29 @@
 }
 
 .hidden {
-  opacity: 0;
-  pointer-events: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+.download-resume-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.download-resume-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 255, 255, 0.4);
 }

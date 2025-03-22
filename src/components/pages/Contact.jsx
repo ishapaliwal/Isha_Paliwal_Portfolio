@@ -81,8 +81,8 @@ function Contact() {
       </div>
 
       <div className="progressBarTagline normalText">
-        Congratulations, you've made it to the end! Scroll down to unveil
-        your prize!
+        Congratulations, you've made it to the end! Scroll down to unveil your
+        prize!
       </div>
 
       <br />
@@ -90,6 +90,7 @@ function Contact() {
       <h2 className="contact-heading mb-3" style={headingStyle}>
         Contact Me
       </h2>
+      <br />
       <div className="contact-content container">
         <div className="row">
           <div className="contact-details col-md-6 mb-3">
@@ -115,6 +116,21 @@ function Contact() {
               >
                 https://github.com/ishapaliwal
               </Link>
+            </p>
+            <p>
+              <a
+                href="/assets/Isha_Paliwal_Final_Resume.pdf"
+                download="Isha_Paliwal_Resume.pdf"
+                className="download-resume-button"
+              >
+                <img
+                  width="28"
+                  height="28"
+                  src="https://img.icons8.com/dusk/28/resume.png"
+                  alt="resume"
+                />
+                &nbsp;Download My Resume
+              </a>
             </p>
           </div>
 
@@ -147,8 +163,14 @@ function Contact() {
                   onChange={handleChange}
                   required
                 ></textarea>
-                <button className="btn btn-dark" type="submit">
-                  SEND MESSAGE
+                <button type="submit" className="download-resume-button">
+                  SEND MESSAGE{" "}
+                  <img
+                    width="28"
+                    height="28"
+                    src="https://img.icons8.com/fluency/28/filled-sent.png"
+                    alt="filled-sent"
+                  />
                 </button>
               </form>
             ) : (

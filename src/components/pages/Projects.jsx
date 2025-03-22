@@ -17,73 +17,29 @@ const projects = [
   {
     title: "Image Colorization: From Grayscale to Vibrant Visuals",
     gif: "https://lottie.host/b5650ec5-fd09-4878-a7e5-613c72b2acd2/R9kvFAVgtX.lottie",
-    img: "https://picsum.photos/200/300",
-    description: "A modern photography website.",
+    img: "/assets/Image_Colorization.jpg",
+    description:
+      "Explored and compared deep learning architectures like Pix2Pix, VGG16, and EfficientNet-UNet for transforming grayscale images into realistic color images, enhancing visual content through learned color mapping.",
     status: "Completed",
-    languages: ["Python", "Deep Learning", "OpenCV"],
+    languages: [
+      "Python",
+      "Deep Learning",
+      "TensorFlow",
+      "Keras",
+      "OpenCV",
+      "GAN",
+      "Pix2Pix",
+      "EfficientNet",
+      "UNet",
+    ],
     link: "https://blogs.gwu.edu/isha-paliwal/2024/12/16/image-colorization-from-grayscale-to-vibrant-visuals/",
-  },
-  {
-    title: "Cancer Genomics and Treatment Prediction",
-    gif: "https://lottie.host/6aa18644-1fe3-4a85-b031-7bd8875c7565/JLvObOJDBh.lottie",
-    img: "https://picsum.photos/200/300",
-    description: "E-commerce store for custom jewelry.",
-    status: "Completed",
-    languages: ["Python", "Machine Learning"],
-
-    link: "https://github.com/ishapaliwal",
-  },
-  {
-    title: "Mood Swings Prediction in Mental Health Dataset",
-    gif: "https://lottie.host/d7cda788-121d-4c2a-8ecb-9b95d8b4edd3/ZEtztg8ssc.lottie",
-    img: "https://picsum.photos/200/300",
-    description: "Mood Swings Prediction in Mental Health Dataset",
-    languages: ["Python", "Machine Learning"],
-    status: "Completed",
-    link: "https://github.com/ishapaliwal",
-  },
-  {
-    title: "My personal portfolio website",
-    gif: "https://lottie.host/4d40e2a1-95bb-4c15-9fcb-8f9bb0dfd6ac/2WxB3YAYZ7.lottie",
-    img: "/assets/Portfolio_image.png",
-    description: "Educational platform for kids.",
-    languages: ["React", "React-Bootstrap", "Material UI", "JS", "HTML", "CSS"],
-    status: "Completed",
-    link: "https://github.com/ishapaliwal/Isha_Paliwal_Portfolio",
-  },
-  {
-    title: "E-Commerce Retail Website",
-    gif: "https://lottie.host/e8442322-4054-4db2-bd10-728e0d3d9c6a/ZWEkAi5fwJ.lottie",
-    img: "https://picsum.photos/200/300",
-    description: "Medical research network system.",
-    languages: ["React", "React-Bootstrap", "Material UI", "JS", "HTML", "CSS"],
-    status: "In-progress",
-    link: "https://github.com/ishapaliwal",
-  },
-  {
-    title:
-      "Turning Pixels into Art: Building an ASCII Art Generator with Python",
-    gif: "https://lottie.host/cb2eef77-dd1d-4647-a962-d104351ff093/2qRBMWaKjt.lottie",
-    img: "https://picsum.photos/200/300",
-    description: "Logistics and supply chain dashboard.",
-    languages: ["Python", "Machine Learning", "Pytorch"],
-    status: "Completed",
-    link: "https://blogs.gwu.edu/isha-paliwal/2024/09/29/turning-pixels-into-art-building-an-ascii-art-generator-with-python/",
-  },
-  {
-    title: "CrowdQuant: Advanced Computer Vision for Mall Traffic Analysis",
-    gif: "https://lottie.host/db1b745d-9444-4de2-bfaf-7cac4d4d6f90/3zvDExrX7n.lottie",
-    img: "https://picsum.photos/200/300",
-    description: "Interactive blog and news portal.",
-    languages: ["Python", "Machine Learning", "Tensorflow"],
-    status: "Completed",
-    link: "https://blogs.gwu.edu/isha-paliwal/2024/10/21/crowdquant-advanced-computer-vision-for-mall-traffic-analysis/",
   },
   {
     title: "Angular Flight Booking Project",
     gif: "https://lottie.host/ff7c4f08-2b77-4442-9890-2155e02c4286/gmpWGQ1Z8X.lottie",
-    img: "https://picsum.photos/200/300",
-    description: "On-going SaaS platform for AI-driven analytics.",
+    img: "/assets/Flight_Booking.png",
+    description:
+      "Developed a web application using Angular to facilitate flight bookings, featuring user-friendly interfaces for searching flights, booking tickets, and managing reservations.",
     languages: [
       "Angular",
       "Typescript",
@@ -92,26 +48,145 @@ const projects = [
       "JS",
       "HTML",
       "CSS",
+      "Bootstrap",
+      "RxJS",
+      "Angular Forms",
+      "JavaScript",
     ],
     status: "Completed",
     link: "https://github.com/ishapaliwal/FlightBooking_Project_Angular",
   },
   {
-    title: "Maps: Digital Playground and Tools",
-    gif: "https://lottie.host/dab2ab28-5538-4bf7-9730-8d2aa2eb2640/3xn03OKn3x.lottie",
-    img: "https://picsum.photos/200/300",
-    description: "On-going SaaS platform for AI-driven analytics.",
+    title: "CrowdQuant: Advanced Computer Vision for Mall Traffic Analysis",
+    gif: "https://lottie.host/db1b745d-9444-4de2-bfaf-7cac4d4d6f90/3zvDExrX7n.lottie",
+    img: "/assets/Crowd_Quant.jpg",
+    description:
+      "Developed a Python-based tool utilizing the YOLOv3 deep learning model to analyze mall surveillance footage, enabling real-time crowd counting and movement pattern analysis to assist mall management in operational planning and crowd control.",
     languages: [
-      "Angular",
-      "Typescript",
-      "PrimeNG",
-      "Angular Material",
+      "Python",
+      "Machine Learning",
+      "Deep Learning",
+      "OpenCV",
+      "YOLOv3",
+      "NumPy",
+      "Matplotlib",
+    ],
+    status: "Completed",
+    link: "https://blogs.gwu.edu/isha-paliwal/2024/10/21/crowdquant-advanced-computer-vision-for-mall-traffic-analysis/",
+  },
+  {
+    title:
+      "Turning Pixels into Art: Building an ASCII Art Generator with Python",
+    gif: "https://lottie.host/cb2eef77-dd1d-4647-a962-d104351ff093/2qRBMWaKjt.lottie",
+    img: "/assets/ASCII_Image.jpg",
+    description:
+      "Developed a Python-based tool that converts images into text-based ASCII art by mapping pixel brightness to corresponding ASCII characters, enabling creative visual representations using simple text.",
+    languages: ["Python", "Machine Learning", "Pillow", "NumPy", "Matplotlib"],
+    status: "Completed",
+    link: "https://blogs.gwu.edu/isha-paliwal/2024/09/29/turning-pixels-into-art-building-an-ascii-art-generator-with-python/",
+  },
+  {
+    title: "Cancer Genomics and Treatment Prediction",
+    gif: "https://lottie.host/6aa18644-1fe3-4a85-b031-7bd8875c7565/JLvObOJDBh.lottie",
+    img: "/assets/Cancer_Genomics.png",
+    description:
+      "Utilized genomic data from TCGA to develop a multi-output classification model predicting patient survival, cancer stage, and treatment type; paving the way for personalized cancer treatment using machine learning.",
+    status: "Completed",
+    languages: [
+      "Python",
+      "Machine Learning",
+      "Data Mining",
+      "NumPy",
+      "Matplotlib",
+    ],
+    link: "https://github.com/ishapaliwal/Cancer_Genomics_and_Treatment_Prediction",
+  },
+  {
+    title: "Mood Swings Prediction in Mental Health Dataset",
+    gif: "https://lottie.host/d7cda788-121d-4c2a-8ecb-9b95d8b4edd3/ZEtztg8ssc.lottie",
+    img: "/assets/Mood_Swings.png",
+    description:
+      "Built a machine learning pipeline using self-reported mental health survey data to predict mood swing severity, applying multi-output classification with models like XGBoost to enhance early diagnosis and personalized intervention strategies.",
+    languages: [
+      "Python",
+      "Machine Learning",
+      "Data Mining",
+      "NumPy",
+      "Matplotlib",
+    ],
+    status: "Completed",
+    link: "https://github.com/ishapaliwal/Mood_Swings_Prediction_in_Mental_Health_Dataset",
+  },
+  {
+    title: "My personal portfolio website",
+    gif: "https://lottie.host/9074eeea-6f6e-461f-83ff-28dc88bd1f51/z6PvOwM66U.lottie",
+    img: "/assets/Portfolio_image.png",
+    description:
+      "Developed a personal portfolio website using React, incorporating Lottie animations, TsParticles effects, and a light/dark theme toggle to enhance user experience and interactivity.",
+    languages: [
+      "React",
+      "React-Bootstrap",
+      "Material UI",
+      "JavaScript",
       "JS",
       "HTML",
       "CSS",
+      "Framer-Motion",
+      "LottieFiles",
+      "emailjs-com",
+      "Bootstrap",
+      "Material Icons",
+    ],
+    status: "Completed",
+    link: "https://github.com/ishapaliwal/Isha_Paliwal_Portfolio",
+  },
+  {
+    title: "Maps: Digital Playground and Tools",
+    gif: "https://lottie.host/dab2ab28-5538-4bf7-9730-8d2aa2eb2640/3xn03OKn3x.lottie",
+    img: "/assets/Maps_Playground.png",
+    description:
+      "Develop an interactive web application using Angular that integrates advanced mapping functionalities, enabling users to explore, visualize, and interact with geospatial data seamlessly.",
+    languages: [
+      "TypeScript",
+      "JavaScript",
+      "PrimeNG",
+      "HTML",
+      "CSS",
+      "Angular",
+      "Leaflet",
+      "OpenLayers",
+      "MapLibre GL",
+      "Angular Material",
+      "Clarity Design System",
+      "D3.js",
+      "RxJS",
+      "ngx-translate",
     ],
     status: "In-progress",
-    link: "https://example.com",
+    link: "https://github.com/ishapaliwal/Maps_-_Digital_Playground_and_Tools",
+  },
+  {
+    title: "AI Integrated E-Commerce Retail Website",
+    gif: "https://lottie.host/e8442322-4054-4db2-bd10-728e0d3d9c6a/ZWEkAi5fwJ.lottie",
+    img: "/assets/Retail_Website.png",
+    description:
+      "Developing an e-commerce retail website integrating artificial intelligence to enhance user experience through personalized recommendations, intelligent search, and automated customer support.",
+    languages: [
+      "React",
+      "React-Bootstrap",
+      "Material UI",
+      "JavaScript",
+      "JS",
+      "HTML",
+      "CSS",
+      "Framer-Motion",
+      "LottieFiles",
+      "emailjs-com",
+      "Bootstrap",
+      "Material Icons",
+    ],
+    status: "In-progress",
+    link: "https://github.com/ishapaliwal/AI_Integrated_ECommerce_Retail_Website",
   },
 ];
 
@@ -172,15 +247,18 @@ const Projects = () => {
   return (
     <div>
       <h2>Projects</h2>
+      <br />
       <div className="search-filters">
         <input
           type="text"
-          placeholder="Search by keyword..."
+          placeholder="Name"
           value={searchTerm}
+          className="form-control"
           onChange={(e) => setSearchTerm(e.target.value)}
         />
         <select
           value={statusFilter}
+          className="form-select custom-select"
           onChange={(e) => setStatusFilter(e.target.value)}
         >
           <option value="">All Statuses</option>
@@ -189,7 +267,8 @@ const Projects = () => {
         </select>
         <input
           type="text"
-          placeholder="Search by language..."
+          className="form-control"
+          placeholder="Language"
           value={languageFilter}
           onChange={(e) => setLanguageFilter(e.target.value)}
         />
