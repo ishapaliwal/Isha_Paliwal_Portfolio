@@ -8,40 +8,137 @@ function AboutMe() {
     {
       category: "Frontend Development",
       skills: [
-        { name: "React.js", level: 90 },
-        { name: "Angular", level: 85 },
-        { name: "JavaScript (ES6+)", level: 95 },
-        { name: "TypeScript", level: 80 },
-        { name: "CSS & SASS", level: 90 },
-        { name: "Tailwind / Bootstrap / MUI", level: 85 },
+        {
+          name: "React",
+          img: "https://img.icons8.com/plasticine/28/react.png",
+        },
+        {
+          name: "Angular",
+          img: "https://img.icons8.com/color/28/angularjs.png",
+        },
+        {
+          name: "JavaScript (ES6+)",
+          img: "https://img.icons8.com/arcade/28/javascript.png",
+        },
+        {
+          name: "TypeScript",
+          img: "https://img.icons8.com/external-tal-revivo-fresh-tal-revivo/28/external-typescript-an-open-source-programming-language-developed-and-maintained-by-microsoft-logo-fresh-tal-revivo.png",
+        },
+        { name: "CSS", img: "https://img.icons8.com/office/28/css.png" },
+        { name: "SASS", class: "light-background", img: "https://img.icons8.com/nolan/28/sass.png" },
+        {
+          name: "Tailwind",
+          img: "https://img.icons8.com/plasticine/28/tailwind_css.png",
+        },
+        {
+          name: "Bootstrap",
+          img: "https://img.icons8.com/nolan/28/bootstrap.png",
+        },
+        { name: "MUI", img: "https://img.icons8.com/color/28/material-ui.png" },
+        { name: "HTML", img: "https://img.icons8.com/color/28/html-5--v1.png" },
       ],
     },
     {
       category: "Backend & Databases",
       skills: [
-        { name: "Node.js & Express.js", level: 80 },
-        { name: "MongoDB", level: 75 },
-        { name: "PostgreSQL / MySQL", level: 70 },
-        { name: "REST & GraphQL APIs", level: 85 },
+        { name: "Node.js", img: "https://img.icons8.com/nolan/28/node-js.png" },
+        {
+          name: "Express.js",
+          img: "https://img.icons8.com/officel/28/express-js.png",
+        },
+        {
+          name: "REST APIs",
+          img: "https://img.icons8.com/ultraviolet/28/api-settings.png",
+        },
+        {
+          name: "GraphQL APIs",
+          img: "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/28/external-graphql-an-open-source-data-query-and-manipulation-language-for-api-logo-shadow-tal-revivo.png",
+        },
+        {
+          name: "Linux / Unix",
+          img: "https://img.icons8.com/external-those-icons-flat-those-icons/28/external-Linux-logos-and-brands-those-icons-flat-those-icons.png",
+        },
+        {
+          name: "Java",
+          img: "https://img.icons8.com/3d-fluency/28/java-coffee-cup-logo.png",
+          class: "light-background",
+        },
+        {
+          name: "Python",
+          img: "https://img.icons8.com/3d-fluency/28/python.png",
+        },
+        {
+          name: "C++",
+          img: "https://img.icons8.com/nolan/28/c-plus-plus-logo.png",
+        },
+        {
+          name: "C",
+          img: "https://img.icons8.com/plasticine/28/c-programming.png",
+        },
+        {
+          name: "PostgreSQL",
+          img: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/28/external-postgre-sql-a-free-and-open-source-relational-database-management-system-logo-color-tal-revivo.png",
+        },
+        {
+          name: "MySQL",
+          img: "https://img.icons8.com/external-those-icons-flat-those-icons/28/external-MySQL-programming-and-development-those-icons-flat-those-icons.png",
+        },
       ],
     },
     {
-      category: "AI / NLP & Tools",
+      category: "Testing Frameworks & Project Management Tools",
       skills: [
-        { name: "Natural Language Processing (NLP)", level: 75 },
-        { name: "OpenAI / LangChain", level: 70 },
-        { name: "TensorFlow / PyTorch (Basics)", level: 60 },
-        { name: "Git & GitHub", level: 90 },
-        { name: "Docker & CI/CD", level: 70 },
+        { name: "Karma", img: "/assets/Karma.png" },
+        { name: "Jasmine", img: "/assets/Logo_jasmine.svg" },
+        {
+          name: "Git & GitHub",
+          img: "https://img.icons8.com/fluency/28/github.png",
+        },
+        {
+          name: "AWS",
+          img: "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/28/external-amazon-web-services-a-subsidiary-of-amazon-that-provides-on-demand-cloud-computing-logo-shadow-tal-revivo.png",
+          class: "light-background",
+        },
+        {
+          name: "Postman",
+          img: "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/28/external-postman-is-the-only-complete-api-development-environment-logo-shadow-tal-revivo.png",
+        },
+        { name: "SonarQube", img: "/assets/SONARqUBE.png" },
+        { name: "JIRA", img: "https://img.icons8.com/color/28/jira.png" },
+        {
+          name: "Trello",
+          img: "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/28/external-trello-a-famous-app-for-building-multi-to-do-list-logo-shadow-tal-revivo.png",
+        },
+        { name: "ServiceNow", img: "/assets/service_now.jpg" },
       ],
     },
     {
       category: "Soft Skills & More",
       skills: [
-        { name: "Problem-Solving", level: 95 },
-        { name: "Team Collaboration", level: 90 },
-        { name: "Creative UI/UX Thinking", level: 85 },
-        { name: "Fast Learning & Adaptability", level: 95 },
+        {
+          name: "Problem-Solving",
+          img: "https://img.icons8.com/external-flat-circular-vectorslab/28/external-Problem-Solving-business-and-management-flat-circular-vectorslab.png",
+        },
+        {
+          name: "Team Collaboration",
+          img: "https://img.icons8.com/color/28/collaborating-in-circle.png",
+        },
+        {
+          name: "Data Structures & Algorithms",
+          img: "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/28/external-algorithms-data-analytics-flaticons-lineal-color-flat-icons.png",
+        },
+        {
+          name: "Creative UI/UX Thinking",
+          img: "https://img.icons8.com/dusk/28/web.png",
+        },
+        {
+          name: "Agile Methodology",
+          img: "https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/28/external-agile-web-design-and-development-flatart-icons-lineal-color-flatarticons.png",
+        },
+        {
+          name: "Fast Learning & Adaptability",
+          img: "https://img.icons8.com/arcade/28/learning.png",
+        },
       ],
     },
   ];
@@ -75,58 +172,150 @@ function AboutMe() {
       <div className="about-container normalText">
         <h2 className="about-title">About Me</h2>
         <p className="about-text">
-          Hey there, I'm <b>Isha Paliwal! 👋</b> A Software Developer crafting
-          digital experiences with <b>React, Angular, and AI/NLP</b>, blending
-          creativity with logic. My passion? Building sleek, high-performance
-          web apps that captivate users and solve real-world problems.
+          Hey there, I'm{" "}
+          <b>
+            Isha Paliwal!{" "}
+            <img
+              width="28"
+              height="28"
+              src="https://img.icons8.com/color/28/so-so-skin-type-1.png"
+              alt="so-so-skin-type-1"
+            />
+          </b>{" "}
+          A Software Developer crafting digital experiences with{" "}
+          <b>React, Angular, and AI/NLP</b>, blending creativity with logic. My
+          passion? Building sleek, high-performance web apps that captivate
+          users and solve real-world problems.
         </p>
 
         <div className="about-grid">
           <div className="about-section">
-            <h4 className="about-subtitle">💡 What I Do:</h4>
+            <h4 className="about-subtitle">
+              <img
+                width="28"
+                height="28"
+                src="https://img.icons8.com/color/28/light-on--v1.png"
+                alt="light-on--v1"
+              />{" "}
+              What I Do:
+            </h4>
             <p>
-              🖥️ <b>Full-Stack Development</b> - Interactive UI & scalable
+              <img
+                width="28"
+                height="28"
+                src="https://img.icons8.com/color/28/imac.png"
+                alt="imac"
+              />{" "}
+              <b>Full-Stack Development</b> - Interactive UI & scalable
               backends.
             </p>
             <p>
-              🎨 <b>Animation Enthusiast</b> - Love Lottie, anime.js, and motion
+              <img
+                width="28"
+                height="28"
+                src="https://img.icons8.com/stickers/28/paint-palette-with-brush.png"
+                alt="paint-palette-with-brush"
+              />{" "}
+              <b>Animation Enthusiast</b> - Love Lottie, anime.js, and motion
               effects.
             </p>
             <p>
-              🤖 <b>AI & NLP Explorer</b> - Making apps smarter with AI.
+              <img
+                width="28"
+                height="28"
+                src="https://img.icons8.com/3d-fluency/28/robot-1.png"
+                alt="robot-1"
+              />{" "}
+              <b>AI & NLP Explorer</b> - Making apps smarter with AI.
             </p>
           </div>
 
           <div className="about-section">
-            <h4 className="about-subtitle">📍 Where I Am Now:</h4>
+            <h4 className="about-subtitle">
+              <img
+                width="28"
+                height="28"
+                src="https://img.icons8.com/stickers/28/map-pin.png"
+                alt="map-pin"
+              />{" "}
+              Where I Am Now:
+            </h4>
             <p>
-              🏙️ <b>Arlington, VA</b>
+              <img
+                width="28"
+                height="28"
+                src="https://img.icons8.com/stickers/28/city-buildings.png"
+                alt="city-buildings"
+              />{" "}
+              <b>Arlington, VA</b>
             </p>
             <p>
-              🎓 <b>MS in Computer Science</b> at{" "}
+              <img
+                width="28"
+                height="28"
+                src="https://img.icons8.com/stickers/28/graduation-cap.png"
+                alt="graduation-cap"
+              />{" "}
+              <b>MS in Computer Science</b> at{" "}
               <b>The George Washington University</b>
             </p>
             <p>
-              💼 <b>Software Developer Intern</b> at <b>Mokxa Technologies</b>
+              <img
+                width="28"
+                height="28"
+                src="https://img.icons8.com/stickers/28/suitcase.png"
+                alt="suitcase"
+              />{" "}
+              <b>Software Developer Intern</b> at <b>Mokxa Technologies</b>
             </p>
           </div>
 
           <div className="about-section">
-            <h4 className="about-subtitle">🌍 Beyond Tech:</h4>
+            <h4 className="about-subtitle">
+              <img
+                width="28"
+                height="28"
+                src="https://img.icons8.com/emoji/28/globe-showing-asia-australia-emoji.png"
+                alt="globe-showing-asia-australia-emoji"
+              />{" "}
+              Beyond Tech:
+            </h4>
             <p>
-              ✈️ <b>Globetrotter</b> - Love traveling and discovering new
-              cultures.
+              <img
+                width="28"
+                height="28"
+                src="https://img.icons8.com/stickers/28/airplane-take-off.png"
+                alt="airplane-take-off"
+              />{" "}
+              <b>Globetrotter</b> - Love traveling and discovering new cultures.
             </p>
             <p>
-              📚 <b>Avid Reader</b> - Fiction, tech, philosophy - I devour it
-              all.
+              <img
+                width="28"
+                height="28"
+                src="https://img.icons8.com/stickers/28/book-shelf.png"
+                alt="book-shelf"
+              />{" "}
+              <b>Avid Reader</b> - Fiction, tech, philosophy - I devour it all.
             </p>
             <p>
-              🎢 <b>Adventure Junkie</b> - Skydiving, rafting, and more.
+              <img
+                width="28"
+                height="28"
+                src="https://img.icons8.com/external-flaticons-flat-flat-icons/28/external-adventure-sports-extreme-sports-flaticons-flat-flat-icons.png"
+                alt="external-adventure-sports-extreme-sports-flaticons-flat-flat-icons"
+              />{" "}
+              <b>Adventure Junkie</b> - Skydiving, rafting, and more.
             </p>
             <p>
-              ❤️ <b>Giving Back</b> - Volunteered at orphanages, old age homes,
-              and welfare centers.
+              <img
+                width="28"
+                height="28"
+                src="https://img.icons8.com/stickers/28/diamond-heart.png"
+                alt="diamond-heart"
+              />{" "}
+              <b>Giving Back</b> - Volunteered at orphanages, old age homes, and
+              welfare centers.
             </p>
           </div>
         </div>
@@ -134,8 +323,7 @@ function AboutMe() {
         <br />
 
         <p className="about-ending">
-          🎯 Let's innovate, build, and create something extraordinary together!
-          🚀
+          Let's innovate, build, and create something extraordinary together!
         </p>
       </div>
 
@@ -152,33 +340,72 @@ function AboutMe() {
         )}
       </div>
       <div className="progressBarTagline normalText">
-        Every step forward is a step toward greatness! 🚀
+        Every step forward is a step toward greatness!
       </div>
 
       <br />
 
       <div className="skills-container normalText">
-        <h2 className="skills-title">🚀 My Tech Arsenal</h2>
+        <h2 className="skills-title">
+          <img
+            width="60"
+            height="60"
+            src="https://img.icons8.com/plasticine/60/circuit.png"
+            alt="circuit"
+          />{" "}
+          My Tech Arsenal
+        </h2>
         <p className="skills-intro">
-          A blend of **Frontend Magic ✨, Backend Logic 🛠, AI Intelligence 🤖,
-          and Problem-Solving 💡.**
+          A blend of **Frontend Magic{" "}
+          <img
+            width="28"
+            height="28"
+            src="https://img.icons8.com/dusk/28/developer-mode.png"
+            alt="developer-mode"
+          />
+          , Backend Logic{" "}
+          <img
+            width="28"
+            height="28"
+            src="https://img.icons8.com/nolan/28/backend-development.png"
+            alt="backend-development"
+          />
+          , AI Intelligence{" "}
+          <img
+            width="26"
+            height="26"
+            src="https://img.icons8.com/office/26/bot.png"
+            alt="bot"
+          />
+          , and Problem-Solving{" "}
+          <img
+            width="28"
+            height="28"
+            src="https://img.icons8.com/office/28/light-on--v1.png"
+            alt="light-on--v1"
+          />
+          .**
         </p>
         <div className="skills-grid">
           {skillsData.map((section, index) => (
             <div key={index} className="skills-section">
               <h3 className="skills-category">{section.category}</h3>
-              {section.skills.map((skill, idx) => (
-                <div key={idx} className="skill-item">
-                  <div className="skill-name">{skill.name}</div>
-                  <div className="skill-bar">
-                    <div
-                      className="skill-progress"
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
+              <div className="skills-pill-wrapper">
+                {section.skills.map((skill, idx) => (
+                  <div key={idx} className="skill-pill">
+                    {skill.img && (
+                      <img
+                        width="28"
+                        height="28"
+                        src={skill.img}
+                        className={skill.class ? skill.class : ""}
+                        alt={skill.name}
+                      />
+                    )}
+                    &nbsp;{skill.name}
                   </div>
-                  <div className="skill-percent">{skill.level}%</div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           ))}
         </div>

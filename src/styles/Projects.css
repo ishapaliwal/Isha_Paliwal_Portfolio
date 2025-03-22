@@ -71,3 +71,26 @@
     background-color: #4caf50;
     color: white;
 }
+
+.search-filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.search-filters input,
+.search-filters select {
+    background-color: var(--contact-input-background);
+    color: var(--contact-input-color) !important;
+}
+
+::placeholder {
+    color: var(--contact-input-placeholder) !important;
+    opacity: 1 !important;
+} 
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}

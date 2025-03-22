@@ -20,6 +20,7 @@ const projects = [
     img: "https://picsum.photos/200/300",
     description: "A modern photography website.",
     status: "Completed",
+    languages: ["Python", "Deep Learning", "OpenCV"],
     link: "https://blogs.gwu.edu/isha-paliwal/2024/12/16/image-colorization-from-grayscale-to-vibrant-visuals/",
   },
   {
@@ -28,6 +29,8 @@ const projects = [
     img: "https://picsum.photos/200/300",
     description: "E-commerce store for custom jewelry.",
     status: "Completed",
+    languages: ["Python", "Machine Learning"],
+
     link: "https://github.com/ishapaliwal",
   },
   {
@@ -35,14 +38,16 @@ const projects = [
     gif: "https://lottie.host/d7cda788-121d-4c2a-8ecb-9b95d8b4edd3/ZEtztg8ssc.lottie",
     img: "https://picsum.photos/200/300",
     description: "Mood Swings Prediction in Mental Health Dataset",
+    languages: ["Python", "Machine Learning"],
     status: "Completed",
     link: "https://github.com/ishapaliwal",
   },
   {
     title: "My personal portfolio website",
     gif: "https://lottie.host/4d40e2a1-95bb-4c15-9fcb-8f9bb0dfd6ac/2WxB3YAYZ7.lottie",
-    img: "https://picsum.photos/200/300",
+    img: "/assets/Portfolio_image.png",
     description: "Educational platform for kids.",
+    languages: ["React", "React-Bootstrap", "Material UI", "JS", "HTML", "CSS"],
     status: "Completed",
     link: "https://github.com/ishapaliwal/Isha_Paliwal_Portfolio",
   },
@@ -51,6 +56,7 @@ const projects = [
     gif: "https://lottie.host/e8442322-4054-4db2-bd10-728e0d3d9c6a/ZWEkAi5fwJ.lottie",
     img: "https://picsum.photos/200/300",
     description: "Medical research network system.",
+    languages: ["React", "React-Bootstrap", "Material UI", "JS", "HTML", "CSS"],
     status: "In-progress",
     link: "https://github.com/ishapaliwal",
   },
@@ -60,6 +66,7 @@ const projects = [
     gif: "https://lottie.host/cb2eef77-dd1d-4647-a962-d104351ff093/2qRBMWaKjt.lottie",
     img: "https://picsum.photos/200/300",
     description: "Logistics and supply chain dashboard.",
+    languages: ["Python", "Machine Learning", "Pytorch"],
     status: "Completed",
     link: "https://blogs.gwu.edu/isha-paliwal/2024/09/29/turning-pixels-into-art-building-an-ascii-art-generator-with-python/",
   },
@@ -68,6 +75,7 @@ const projects = [
     gif: "https://lottie.host/db1b745d-9444-4de2-bfaf-7cac4d4d6f90/3zvDExrX7n.lottie",
     img: "https://picsum.photos/200/300",
     description: "Interactive blog and news portal.",
+    languages: ["Python", "Machine Learning", "Tensorflow"],
     status: "Completed",
     link: "https://blogs.gwu.edu/isha-paliwal/2024/10/21/crowdquant-advanced-computer-vision-for-mall-traffic-analysis/",
   },
@@ -76,6 +84,15 @@ const projects = [
     gif: "https://lottie.host/ff7c4f08-2b77-4442-9890-2155e02c4286/gmpWGQ1Z8X.lottie",
     img: "https://picsum.photos/200/300",
     description: "On-going SaaS platform for AI-driven analytics.",
+    languages: [
+      "Angular",
+      "Typescript",
+      "PrimeNG",
+      "Angular Material",
+      "JS",
+      "HTML",
+      "CSS",
+    ],
     status: "Completed",
     link: "https://github.com/ishapaliwal/FlightBooking_Project_Angular",
   },
@@ -84,7 +101,16 @@ const projects = [
     gif: "https://lottie.host/dab2ab28-5538-4bf7-9730-8d2aa2eb2640/3xn03OKn3x.lottie",
     img: "https://picsum.photos/200/300",
     description: "On-going SaaS platform for AI-driven analytics.",
-    status: "Ongoing",
+    languages: [
+      "Angular",
+      "Typescript",
+      "PrimeNG",
+      "Angular Material",
+      "JS",
+      "HTML",
+      "CSS",
+    ],
+    status: "In-progress",
     link: "https://example.com",
   },
 ];
@@ -94,6 +120,27 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [animationLoaded, setAnimationLoaded] = useState(false);
   const [showScrollArrow, setShowScrollArrow] = useState(true);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [statusFilter, setStatusFilter] = useState("");
+  const [languageFilter, setLanguageFilter] = useState("");
+
+  const filteredProjects = projects.filter((project) => {
+    const matchesStatus = statusFilter
+      ? project.status.toLowerCase() === statusFilter.toLowerCase()
+      : true;
+    const matchesKeyword =
+      searchTerm === "" ||
+      project.title.toLowerCase().includes(searchTerm.toLowerCase());
+
+    const matchesLanguage =
+      languageFilter === "" ||
+      (project.languages &&
+        project.languages.some((lang) =>
+          lang.toLowerCase().includes(languageFilter.toLowerCase())
+        ));
+
+    return matchesStatus && matchesKeyword && matchesLanguage;
+  });
 
   useEffect(() => {
     setTimeout(() => setAnimationLoaded(true), 1000);
@@ -125,8 +172,30 @@ const Projects = () => {
   return (
     <div>
       <h2>Projects</h2>
+      <div className="search-filters">
+        <input
+          type="text"
+          placeholder="Search by keyword..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <select
+          value={statusFilter}
+          onChange={(e) => setStatusFilter(e.target.value)}
+        >
+          <option value="">All Statuses</option>
+          <option value="Completed">Completed</option>
+          <option value="In-progress">In-progress</option>
+        </select>
+        <input
+          type="text"
+          placeholder="Search by language..."
+          value={languageFilter}
+          onChange={(e) => setLanguageFilter(e.target.value)}
+        />
+      </div>
       <div className="projects-container normalText">
-        {projects.map((project, index) => (
+        {filteredProjects.map((project, index) => (
           <div key={index} className="project-card-content">
             <Card className="project-card" onClick={() => handleOpen(project)}>
               <CardActionArea>
@@ -192,7 +261,7 @@ const Projects = () => {
         )}
       </div>
       <div className="progressBarTagline normalText">
-        Keep going! You're closer than you think. 🎯
+        Keep going! You're closer than you think.
       </div>
 
       {showScrollArrow && (

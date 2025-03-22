@@ -131,7 +131,7 @@ const Experience = () => {
         )}
       </div>
       <div className="progressBarTagline normalText">
-        You are doing great! Keep going, your current score is 40/100!
+        You are doing great! Your current score is 50/100!
       </div>
 
       {showScrollArrow && (

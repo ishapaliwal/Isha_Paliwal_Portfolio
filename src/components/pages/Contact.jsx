@@ -81,8 +81,8 @@ function Contact() {
       </div>
 
       <div className="progressBarTagline normalText">
-        🎉 Congratulations, you've made it to the end! 🎉 Scroll down to unveil
-        your prize! 🎁✨
+        Congratulations, you've made it to the end! Scroll down to unveil
+        your prize!
       </div>
 
       <br />

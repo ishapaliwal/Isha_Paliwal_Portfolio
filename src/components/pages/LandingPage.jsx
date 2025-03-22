@@ -47,7 +47,7 @@ function LandingPage() {
         )}
       </div>
       <div className="progressBarTagline normalText">
-        A surprise awaits at the end... Keep going to unlock it! 🎁✨
+        A surprise awaits at the end... Keep going to unlock it!
       </div>
 
       {showScrollArrow && (

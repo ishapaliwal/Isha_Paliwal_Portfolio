@@ -11,7 +11,6 @@ import AboutMe from "./components/pages/AboutMe";
 import Education from "./components/pages/Education";
 import Experience from "./components/pages/Experience";
 import Projects from "./components/pages/Projects";
-import Resume from "./components/pages/Resume";
 import Contact from "./components/pages/Contact";
 import { ThemeProvider } from "./components/special_components/ApplyTheme";
 
@@ -27,8 +26,6 @@ function App() {
           <Route path="/experience" element={<Experience />}></Route>
           <Route path="/education" element={<Education />}></Route>
           <Route path="/projects" element={<Projects />}></Route>
-          <Route path="/resume" element={<Resume />}></Route>
-          {/* <Route path="/feedback" element={<ClientFeedback />}></Route> */}
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
         <Footer />
