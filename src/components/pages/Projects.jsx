@@ -39,7 +39,7 @@ const projects = [
     gif: "https://lottie.host/ff7c4f08-2b77-4442-9890-2155e02c4286/gmpWGQ1Z8X.lottie",
     img: "/assets/Flight_Booking.png",
     description:
-      "Developed a web application using Angular to facilitate flight bookings, featuring user-friendly interfaces for searching flights, booking tickets, and managing reservations.",
+      "Engineered a web application using Angular to facilitate flight bookings, featuring user-friendly interfaces for searching flights, booking tickets, and managing reservations.",
     languages: [
       "Angular",
       "Typescript",
@@ -61,7 +61,7 @@ const projects = [
     gif: "https://lottie.host/3ebeab0c-a724-4b7c-87d5-d88d1b226e6b/NiMpZMpXT3.lottie",
     img: "/assets/Chat_with_PDF.jpg",
     description:
-      "A local-first conversational AI that lets you chat with PDF documents using Meta’s LLaMA 2 7B Chat model (GGUF), powered by 'llama-cpp-python' for fast, offline inference.",
+      "Implemented a local-first conversational AI that lets you chat with PDF documents using Meta’s LLaMA 2 7B Chat model (GGUF), powered by 'llama-cpp-python' for fast, offline inference.",
     languages: [
       "Python",
       "Machine Learning",
@@ -80,7 +80,7 @@ const projects = [
     gif: "https://lottie.host/db1b745d-9444-4de2-bfaf-7cac4d4d6f90/3zvDExrX7n.lottie",
     img: "/assets/Crowd_Quant.jpg",
     description:
-      "Developed a Python-based tool utilizing the YOLOv3 deep learning model to analyze mall surveillance footage, enabling real-time crowd counting and movement pattern analysis to assist mall management in operational planning and crowd control.",
+      "Built a Python-based tool utilizing the YOLOv3 deep learning model to analyze mall surveillance footage, enabling real-time crowd counting and movement pattern analysis to assist mall management in operational planning and crowd control.",
     languages: [
       "Python",
       "Machine Learning",
@@ -99,7 +99,7 @@ const projects = [
     gif: "https://lottie.host/cb2eef77-dd1d-4647-a962-d104351ff093/2qRBMWaKjt.lottie",
     img: "/assets/ASCII_Image.jpg",
     description:
-      "Developed a Python-based tool that converts images into text-based ASCII art by mapping pixel brightness to corresponding ASCII characters, enabling creative visual representations using simple text.",
+      "Created a Python-based tool that converts images into text-based ASCII art by mapping pixel brightness to corresponding ASCII characters, enabling creative visual representations using simple text.",
     languages: ["Python", "Machine Learning", "Pillow", "NumPy", "Matplotlib"],
     status: "Completed",
     link: "https://blogs.gwu.edu/isha-paliwal/2024/09/29/turning-pixels-into-art-building-an-ascii-art-generator-with-python/",
@@ -125,7 +125,7 @@ const projects = [
     gif: "https://lottie.host/d7cda788-121d-4c2a-8ecb-9b95d8b4edd3/ZEtztg8ssc.lottie",
     img: "/assets/Mood_Swings.png",
     description:
-      "Built a machine learning pipeline using self-reported mental health survey data to predict mood swing severity, applying multi-output classification with models like XGBoost to enhance early diagnosis and personalized intervention strategies.",
+      "Designed a machine learning pipeline using self-reported mental health survey data to predict mood swing severity, applying multi-output classification with models like XGBoost to enhance early diagnosis and personalized intervention strategies.",
     languages: [
       "Python",
       "Machine Learning",
@@ -141,7 +141,7 @@ const projects = [
     gif: "https://lottie.host/9074eeea-6f6e-461f-83ff-28dc88bd1f51/z6PvOwM66U.lottie",
     img: "/assets/Portfolio_image.png",
     description:
-      "Developed a personal portfolio website using React, incorporating Lottie animations, TsParticles effects, and a light/dark theme toggle to enhance user experience and interactivity.",
+      "Crafted a personal portfolio website using React, incorporating Lottie animations, TsParticles effects, and a light/dark theme toggle to enhance user experience and interactivity.",
     languages: [
       "React",
       "React-Bootstrap",
@@ -164,7 +164,7 @@ const projects = [
     gif: "https://lottie.host/dab2ab28-5538-4bf7-9730-8d2aa2eb2640/3xn03OKn3x.lottie",
     img: "/assets/Maps_Playground.png",
     description:
-      "Develop an interactive web application using Angular that integrates advanced mapping functionalities, enabling users to explore, visualize, and interact with geospatial data seamlessly.",
+      "Architecting an interactive web application using Angular that integrates advanced mapping functionalities, enabling users to explore, visualize, and interact with geospatial data seamlessly.",
     languages: [
       "TypeScript",
       "JavaScript",
