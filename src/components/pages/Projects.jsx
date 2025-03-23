@@ -155,6 +155,8 @@ const projects = [
       "emailjs-com",
       "Bootstrap",
       "Material Icons",
+      "Three.js",
+      "ThreeJS"
     ],
     status: "Completed",
     link: "https://github.com/ishapaliwal/Isha_Paliwal_Portfolio",
