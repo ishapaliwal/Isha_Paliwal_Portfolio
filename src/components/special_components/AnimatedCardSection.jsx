@@ -28,15 +28,9 @@ const data = [
   },
   {
     id: 5,
-    title: "Resume",
+    title: "Contact",
     image: "https://picsum.photos/1200/650?random=5",
-    link: "/resume",
-  },
-  {
-    id: 6,
-    title: "Blogs",
-    image: "https://picsum.photos/1200/650?random=6",
-    link: "/blogs",
+    link: "/contact",
   },
 ];
 
