@@ -5,12 +5,7 @@ const ApplyTheme = createContext();
 export const ThemeProvider = ({ children }) => {
   const [darkMode, setDarkMode] = useState(() => {
     const savedMode = localStorage.getItem("darkMode");
-    if (savedMode !== null) {
-      return savedMode === "true";
-    }
-    const now = new Date();
-    const localHours = now.getHours();
-    return localHours >= 18 || localHours < 5;
+    return savedMode !== null ? savedMode === "true" : true;
   });
 
   useEffect(() => {

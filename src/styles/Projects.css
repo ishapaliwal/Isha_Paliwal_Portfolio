@@ -40,6 +40,7 @@
 .project-image {
     border-radius: inherit;
     width: 100%;
+    border: 1px solid var(--contact-input-color);
 }
 
 .css-1j74uew-MuiPaper-root-MuiCard-root {

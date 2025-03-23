@@ -57,6 +57,25 @@ const projects = [
     link: "https://github.com/ishapaliwal/FlightBooking_Project_Angular",
   },
   {
+    title: "Chat with PDF - Conversational AI model",
+    gif: "https://lottie.host/3ebeab0c-a724-4b7c-87d5-d88d1b226e6b/NiMpZMpXT3.lottie",
+    img: "/assets/Chat_with_PDF.jpg",
+    description:
+      "A local-first conversational AI that lets you chat with PDF documents using Meta’s LLaMA 2 7B Chat model (GGUF), powered by 'llama-cpp-python' for fast, offline inference.",
+    languages: [
+      "Python",
+      "Machine Learning",
+      "Deep Learning",
+      "LLaMA 2 7B Chat (GGUF)",
+      "llama-cpp-python",
+      "PyPDF2 or pdfminer.six",
+      "faiss",
+      "langchain",
+    ],
+    status: "Completed",
+    link: "https://github.com/ishapaliwal/Chat_with_PDF_-_Conversational_AI_model",
+  },
+  {
     title: "CrowdQuant: Advanced Computer Vision for Mall Traffic Analysis",
     gif: "https://lottie.host/db1b745d-9444-4de2-bfaf-7cac4d4d6f90/3zvDExrX7n.lottie",
     img: "/assets/Crowd_Quant.jpg",

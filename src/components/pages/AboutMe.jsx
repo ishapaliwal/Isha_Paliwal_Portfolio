@@ -305,7 +305,7 @@ function AboutMe() {
                 src="https://img.icons8.com/external-flaticons-flat-flat-icons/28/external-adventure-sports-extreme-sports-flaticons-flat-flat-icons.png"
                 alt="external-adventure-sports-extreme-sports-flaticons-flat-flat-icons"
               />{" "}
-              <b>Adventure Junkie</b> - Skydiving, rafting, and more.
+              <b>Adventure Junkie</b> - Bunjee jumping, rafting, and more.
             </p>
             <p>
               <img
@@ -356,7 +356,7 @@ function AboutMe() {
           My Tech Arsenal
         </h2>
         <p className="skills-intro">
-          A blend of **Frontend Magic{" "}
+          A blend of Frontend Magic{" "}
           <img
             width="28"
             height="28"
@@ -384,7 +384,7 @@ function AboutMe() {
             src="https://img.icons8.com/office/28/light-on--v1.png"
             alt="light-on--v1"
           />
-          .**
+          .
         </p>
         <div className="skills-grid">
           {skillsData.map((section, index) => (

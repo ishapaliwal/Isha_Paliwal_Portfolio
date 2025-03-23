@@ -10,7 +10,7 @@ const experiences = [
     company: "Mokxa Technologies, LLC",
     location: "Columbia, Maryland",
     duration: "Jan 2024 - Present",
-    clients: ["Ernst & Young Global Limited, Democratic Party of Virginia"],
+    clients: ["One of the “Big Four” accounting firms and a U.S. political organization"],
     description:
       "Developed a loan application system to streamline document uploads and automate workflows, improving efficiency by 25%. Led frontend development of Vote Builder, optimizing voter outreach by 30% and mapping 500+ turfs for canvassing.",
   },
@@ -19,7 +19,7 @@ const experiences = [
     company: "HCL Technologies Limited",
     location: "Bangalore, India",
     duration: "Jan 2022 - Aug 2023",
-    clients: ["Aviva plc, Chesnara plc, Phoenix Group Holdings plc, ReAssure"],
+    clients: ["Top-tier British life insurance, pensions, and investment management firms"],
     description:
       "Engineered enterprise content and communication solutions, enhancing system accessibility by 30%. Spearheaded migration to PrimeNG and optimized CI/CD pipelines, reducing deployment times by 20% while achieving 98% test coverage.",
   },
@@ -28,7 +28,7 @@ const experiences = [
     company: "Infosys Ltd",
     location: "Pune, India",
     duration: "Sep 2019 - Dec 2021",
-    clients: ["The Boeing Company"],
+    clients: ["Fortune 100 Aerospace Client"],
     description:
       "Built single-page applications for Boeing, serving 10K+ users daily while handling 50+ change requests per month. Led maintenance efforts, achieving a 95% bug resolution rate and improving code performance by 25%.",
   },
