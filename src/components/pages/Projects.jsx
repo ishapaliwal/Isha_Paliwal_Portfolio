@@ -289,7 +289,7 @@ const Projects = () => {
         <input
           type="text"
           className="form-control"
-          placeholder="Language"
+          placeholder="Tech Stack"
           value={languageFilter}
           onChange={(e) => setLanguageFilter(e.target.value)}
         />
