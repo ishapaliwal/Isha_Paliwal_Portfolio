@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# Isha Paliwal - Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my personal portfolio website! This is a **pixel-perfect** digital showcase of my skills, projects, experience, and journey as a developer. Built with creativity and functionality in mind, it's fully responsive and interactive.
 
-## Available Scripts
+## Screenshots
 
-In the project directory, you can run:
+### Desktop View
+![Desktop View](./public/assets/screenshot-desktop.png)
 
-### `npm start`
+### Mobile View
+![Mobile View](./public/assets/screenshot-mobile.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Smooth scrolling and animated navigation
+- Quick Links section with hover effects
+- Interactive progress bar with a surprise at the end
+- Dark/light theme toggle switch 
+- Fully responsive on mobile and desktop devices
+- Linked resume and multiple contact options
+- Animated Card Section on the main landing page
+- Scroll-to-bottom button for easy navigation
+- Game added in the Contact section using Three.js
+- Background pattern designed using [Pattern.Monster](https://pattern.monster)
+- Image Carousel on the Experience page to showcase highlights
+- Filterable Card Grid on the Projects page:
+  - Filter by keywords in project names
+  - Filter by project status (completed, in-progress, etc.)
+  - Filter by technologies/languages used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React.js** with JSX
+- **HTML5**, **CSS3**, and **JavaScript**
+- **Responsive Design** via Flexbox and Media Queries
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Extra Libraries & Functionalities
 
-### `npm run eject`
+| Library / Tool            | Purpose                                         |
+|---------------------------|-------------------------------------------------|
+| `react-icons`             | Icons across navbar and footer                  |
+| `react-scroll`            | Smooth scrolling to sections                    |
+| `react-switch`            | Toggle for Dark Mode                           |
+| `react-router-dom`        | Routing between different pages (if used)       |
+| `pdf.worker.min.js`       | PDF rendering functionality (PDF.js)           |
+| `three`, `@react-three/fiber` | Game rendering with Three.js in Contact page   |
+| `react-slick` or similar  | For Image Carousel in Experience section        |
+| Custom filtering logic    | Used for Project card filtering (name, status, tech) |
+| `_redirects` file         | Netlify-compatible routing                      |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Game Credit
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The Crossy Road-style game embedded in the **Contact** section is built using **Three.js** and React Three Fiber, inspired by this amazing tutorial:  
+[Crossy Road Game Tutorial](https://javascriptgametutorials.com/tutorials/react-three-fiber/crossy-road)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Folder Structure (Main Parts)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+isha-paliwal-portfolio-app/
+├── public/
+│   ├── assets/         # Images, resume, logos
+│   └── index.html
+├── src/
+│   ├── App.jsx
+│   ├── App.css
+│   └── ...components
+├── screenshot-desktop.png
+├── screenshot-mobile.png
+├── package.json
+└── README.md
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+_A pixel-perfect masterpiece by © Isha Paliwal_
