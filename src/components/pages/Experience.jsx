@@ -6,7 +6,7 @@ import "../../styles/Experience.css";
 
 const experiences = [
   {
-    role: "Software Developer Intern",
+    role: "Software Developer",
     company: "Mokxa Technologies, LLC",
     location: "Columbia, Maryland",
     duration: "Jan 2024 - Present",
@@ -71,7 +71,7 @@ const Experience = () => {
   };
 
   return (
-    <div>
+    <div className="experience_section">
       <h2>Experience</h2>
       <div className="slider normalText">
         <button className="slider--btn slider--btn__prev" onClick={handlePrev}>

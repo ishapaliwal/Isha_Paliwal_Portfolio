@@ -110,3 +110,124 @@
   opacity: 0;
   pointer-events: none;
 }
+
+@media (max-width: 375px) { 
+    .slide {
+        width: 295px;
+        padding: 65px;
+        padding-top: 60px;
+    }
+    .slide-duration {
+        margin-bottom: 0.3rem;
+    }
+    .slide-clients {
+        margin-bottom: 0.3rem;
+    }
+    .slide-location {
+        margin-bottom: 0.3rem;
+    }
+    .slide-description {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 350px) { 
+    .experience_section {
+        margin: 20px auto;
+    }
+    .normalText {
+        font-size: 0.9rem;
+    }
+    .slide {
+        width: 265px;
+    }
+    .slide-title {
+        font-size: 1.4rem;
+        margin-bottom: 0.2rem;
+    }
+    .slide-company {
+        font-size: 1rem;
+    }
+    .slide-location {
+        font-size: 0.9rem;
+    }
+    .slide-duration {
+        font-size: 0.9rem;
+    }
+    .slide-clients {
+        font-size: 0.9rem;
+    }
+    .slider--btn {
+        position: relative;
+        bottom: 10%;
+    }
+}
+
+@media (max-width: 300px) { 
+    .experience_section {
+        margin: 50px auto;
+        margin-top: 30px;
+    }
+    .normalText {
+        font-size: 0.9rem;
+    }
+    .slide {
+        width: 240px;
+    }
+    .slide-title {
+        font-size: 1.2rem;
+    }
+    .slide-company {
+        font-size: 0.9rem;
+    }
+    .slide-location {
+        font-size: 0.8rem;
+    }
+    .slide-duration {
+        font-size: 0.8rem;
+    }
+    .slide-clients {
+        font-size: 0.8rem;
+    }
+    .slide-description {
+        font-size: 0.7rem;
+    }
+    .slider--btn {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 250px) { 
+    .experience_section {
+        margin: 120px auto;
+        margin-top: 30px;
+    }
+    .normalText {
+        font-size: 0.8rem;
+    }
+    .slide {
+        width: 210px;
+    }
+    .slide-title {
+        font-size: 1rem;
+    }
+    .slide-company {
+        font-size: 0.8rem;
+        margin-bottom: 0rem;
+    }
+    .slide-location {
+        font-size: 0.7rem;
+        margin-bottom: 0rem;
+    }
+    .slide-duration {
+        font-size: 0.7rem;
+        margin-bottom: 0rem;
+    }
+    .slide-clients {
+        font-size: 0.6rem;
+        margin-bottom: 0rem;
+    }
+    .slide-description {
+        font-size: 0.6rem;
+    }
+}
