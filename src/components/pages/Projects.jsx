@@ -35,6 +35,7 @@ const projects = [
       "JavaScript",
       "CSS",
       "HTML",
+      "JS",
     ],
     link: "https://connectwise.netlify.app/",
   },
