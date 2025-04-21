@@ -19,7 +19,7 @@ const projects = [
     gif: "https://lottie.host/40b604ea-b092-4051-8825-97eb707ae9f8/vSjZ5ebHMI.lottie",
     img: "/assets/ConnectWise_Social_App.png",
     description:
-      "Developed a full-stack social media app featuring real-time messaging, content sharing, user engagement, and an admin dashboard. Integrated AWS S3 for image uploads, responsive post grid layout, and JWT-based authentication. Users can share posts via links, chat, or explore public content.",
+      "Developed a full-stack social media app featuring real-time messaging, content sharing, user engagement, and an admin dashboard. Integrated AWS S3 for image uploads, responsive post grid layout, and JWT-based authentication. Users can share posts via links, chat, or explore public content.<br/>Sample Credentials: isha.paliwal@gwu.wdu/User@1234.Right",
     status: "Completed",
     languages: [
       "React",
@@ -34,10 +34,10 @@ const projects = [
       "Socket.io (Polling)",
       "JavaScript",
       "CSS",
-      "HTML"
+      "HTML",
     ],
     link: "https://connectwise.netlify.app/",
-  },  
+  },
   {
     title: "Image Colorization: From Grayscale to Vibrant Visuals",
     gif: "https://lottie.host/b5650ec5-fd09-4878-a7e5-613c72b2acd2/R9kvFAVgtX.lottie",
@@ -180,7 +180,7 @@ const projects = [
       "Bootstrap",
       "Material Icons",
       "Three.js",
-      "ThreeJS"
+      "ThreeJS",
     ],
     status: "Completed",
     link: "https://github.com/ishapaliwal/Isha_Paliwal_Portfolio",
