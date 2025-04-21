@@ -362,9 +362,11 @@ const Projects = () => {
                 ) : (
                   <p>Loading animation...</p>
                 )}
-                <Typography variant="body1" className="dialog-description">
-                  {selectedProject.description}
-                </Typography>
+                <Typography
+                  variant="body1"
+                  className="dialog-description"
+                  dangerouslySetInnerHTML={{ __html: selectedProject.description }}
+                />
                 <Button
                   href={selectedProject.link}
                   target="_blank"
