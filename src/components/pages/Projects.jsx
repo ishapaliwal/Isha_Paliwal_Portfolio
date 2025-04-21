@@ -207,6 +207,8 @@ const projects = [
       "D3.js",
       "RxJS",
       "ngx-translate",
+      "JS",
+      "TS",
     ],
     status: "In-progress",
     link: "https://github.com/ishapaliwal/Maps_-_Digital_Playground_and_Tools",
