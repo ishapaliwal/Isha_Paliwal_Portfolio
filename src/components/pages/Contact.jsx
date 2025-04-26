@@ -119,7 +119,7 @@ function Contact() {
             </p>
             <p>
               <a
-                href="/assets/Isha_Paliwal_Final_Resume.pdf"
+                href="/assets/Isha_Paliwal_UI_Resume.pdf"
                 download="Isha_Paliwal_Resume.pdf"
                 className="download-resume-button"
               >
